@@ -1,0 +1,50 @@
+.painel-fechadura td{
+	padding: 5px 0;
+}
+
+.painel-fechadura td button{
+	font-size: 30px;
+}
+
+.painel-fechadura input[type=text]{
+	color: #000;
+	letter-spacing: 2px;
+	font-size: 50px;
+	background-color: #E5E4E2;
+	border: none;
+	text-decoration: none;
+}
+
+.btn-fechadura{
+	background-color: #000;
+	border-color: #FFF;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid #FFF;
+	border-radius: 4px;
+}
+
+.btn-fechadura:hover{
+	color: #000;
+	background-color: #FFF;
+	border-color: #FFF;
+}
+
+.btn-fechadura:focus{
+	color: #FFF;
+}

@@ -1,0 +1,66 @@
+<div class="modal-header text-center" style="width: 1082px; margin-top: -5px; padding: 2px 0 0 0; color: #FFF; display: inline-block;">
+    <button type="button" class="btn btn-sm btn-danger pull-right" data-dismiss="modal" onclick="limparCampos()">X</button>
+    <br>
+    <h2 style="margin: 0 0 8px 0;">Máquina de Doces</h2>
+</div>
+
+<div class="modal-body" style="width: 1082px; padding: 15px 0;"> 
+    <!-- Início - Visualização dos Valores Informados -->
+    <div class="maquina-estrutura pull-right">
+
+        <div class="text-center">
+            <img class="dinheiro" src="img/md/um_real.png" width="100" onclick="calculaTotal(this.id)" id="1">
+            <img class="dinheiro" src="img/md/dois_reais.png" width="250" onclick="calculaTotal(this.id)" id="2">
+            <img class="dinheiro" src="img/md/cinco_reais.png" width="250" onclick="calculaTotal(this.id)" id="5">
+        </div>
+
+        <form class="maquina-output">
+            <div style="font-size: 25px;">
+                <i class="text-white fa fa-credit-card-alt"></i> <span class="text-white"> <strong>Dinheiro:</strong> </span>
+            </div>
+            <input type="text" disabled="true" value="0" id="total_dinheiro">
+            <br><br>
+            <div style="font-size: 25px;">
+                <i class="text-white fa fa-sort-alpha-asc"></i> <span class="text-white"> <strong>Palavra:</strong> </span>
+            </div>
+            <input type="text" disabled="true" name="exibe-valor" id="total_palavra">
+            <br><br>
+            <div class="text-center">
+                <button id="limpar" type="reset" class="btn btn-primary btn-lg" onclick="limparCampos()"><i class="glyphicon glyphicon-erase"></i> <strong>Limpar</strong></button>
+            </div>
+        </form>
+        <!-- Fim - Visualização dos Valores Informados -->
+
+        <!-- Início - Resultado da operação -->
+        <div style="font-size: 25px;">
+            <i class="text-white fa fa-terminal"></i> <label class="text-white">Resultado:</label>
+        </div>
+        <p class="maquina-resultado"></p>
+
+    </div>
+    <!-- Fim - Resultado da operação -->
+
+    <img id="troco" style="position: absolute; margin: 497px 0px 0px 303px; visibility: hidden;" src="img/md/troco.png">
+    <img id="retirada-ruffles" style="position: absolute; margin: 486px 0px 0px 104px; visibility: hidden;" src="img/md/ruffles_2.png">
+    <img id="retirada-hersheys" style="position: absolute; margin: 502px 0px 0px 111px; visibility: hidden;" src="img/md/hersheys_2.png">
+    <img id="retirada-doritos" style="position: absolute; margin: 483px 0px 0px 104px; visibility: hidden;" src="img/md/doritos_2.png">
+    
+    <div style="background-image: url('img/md/maquina_doces.png'); width: 374px; height: 594px; display: inline-block;">
+
+        <div style="padding: 50px 0 0 36px;">
+            <img src="img/md/ruffles.png" onclick="efetuarCompra(this.id)" id="D">
+        </div>
+        <div style="padding: 41px 0 0 42px;">
+            <img src="img/md/hersheys.png" onclick="efetuarCompra(this.id)" id="E">
+        </div>
+        <div style="padding: 48px 0 0 35px;">
+            <img src="img/md/doritos.png" onclick="efetuarCompra(this.id)" id="F">
+        </div>
+
+    </div>
+
+
+
+
+</div>
+

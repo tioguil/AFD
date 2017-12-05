@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto Interdisciplinar</title>
+
+	<!-- Importação JavaScript -->
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/sprite.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
+	<script src="js/funcoes-elevador.js"></script>
+	<script src="js/funcoes-md.js"></script>
+    <script src="js/funcoes-fechadura.js"></script>
+
+	<!-- Importação CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles-md.css">
+	<link rel="stylesheet" type="text/css" href="css/styles-fechadura.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-confirm.min.css">
+	<link rel="stylesheet" href="css/styles-elevador.css">
+
+</head>
+<body>
+	<div style="width: 1366px;">
+		<div class="pull-left">
+			<script>
+				// Chamada da função main() que renderiza o canvas.
+				main();
+			</script>
+		</div>
+		<div class="sidebar-elevador">
+
+			<div class="text-center" style="margin-bottom: 1px;">
+				<div style="font-size: 30px;">
+					<strong>Projeto AFD - NilOne</strong>
+				</div>
+                <div class="bg-info" style="font-size: 22px; border-radius: 5px; margin-bottom: 1px;">
+                	<i class="fa fa-sort"></i> <strong>Andar:</strong> <span id="andar-elevador">Térreo</span>
+            	</div>
+                <div class="bg-primary" style="font-size: 22px; border-radius: 5px; margin-top: 1px;">
+                	<i class="fa fa-sort-alpha-asc"></i> <strong>Palavra:</strong> <span id="palavra-elevador">Y00X</span>
+                </div>
+            </div>
+
+			<div class="painel-elevador">
+				<div class="text-center">
+					<button class="btn btn-danger btn-circle"><i class="fa fa-bell-o"></i></button>
+				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<button class="btn btn-elevador btn-circle" onclick="painelElevador(this.id)" id="4">4</button>
+							</td>
+							<td>
+								<button class="btn btn-elevador btn-circle" onclick="painelElevador(this.id)" id="5">5</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button class="btn btn-elevador btn-circle" onclick="painelElevador(this.id)" id="2">2</button>
+							</td>
+							<td>
+								<button class="btn btn-elevador btn-circle" onclick="painelElevador(this.id)" id="3">3</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button class="btn btn-elevador btn-circle disabled disabled-elevador" onclick="painelElevador(this.id)" id="0">T</button>
+							</td>
+							<td>
+								<button class="btn btn-elevador btn-circle" onclick="painelElevador(this.id)" id="1">1</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="text-center" style="margin-top: 5px;">
+				<button type="button" id="btn-md" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#modalMaquinaDoces" style="visibility: hidden; font-size: 20px;">Máquina de Doces</button>
+			</div>
+		</div>
+
+		<!-- Modal -->
+
+		<a href="maquina_doces.html" id="modal-md" data-toggle="modal" data-target="#modalMaquinaDoces" style="visibility: hidden;"></a>
+		<a href="fechadura.html" id="modal-fechadura" data-toggle="modal" data-target="#modalFechadura" style="visibility: hidden;"></a>
+
+		<div id="modalMaquinaDoces" class="modal fade">
+			<div class="modal-dialog" style="width: 1084px; background-color: transparent;">
+				<div class="modal-content" style="background-color: transparent; border: none; box-shadow: none; padding: 0;">
+				</div>
+			</div>
+		</div>
+
+		<div id="modalFechadura" class="modal fade text-center">
+			<div class="modal-dialog" style="width: 234px; background-color: transparent;">
+				<div class="modal-content" style="background-color: transparent; border: none; box-shadow: none;">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+$("#modalMaquinaDoces").on("hidden.bs.modal", function(){
+	limparCampos();
+});
+</script>
+</html>

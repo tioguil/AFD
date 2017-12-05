@@ -1,0 +1,77 @@
+.maquina-estrutura {
+    display: inline-block; 
+    background-color: rgba(0, 0, 0, 1); 
+    border-radius: 10px; 
+    padding: 15px; 
+    width: 700px; 
+    height: 594px;
+}
+
+.maquina-nome {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.maquina-fundo {
+    background: #555;
+    padding: 30px; 
+    border: 2px solid rgba(255, 255, 255, .7); 
+    background-clip: padding-box;
+    width: 635px;
+    height: 660px;
+    margin: 0 auto;
+}
+
+.maquina-resultado {
+    font-size: 28px;
+    padding: 10px;
+    margin-top: 2px;
+    background: #E5E4E2;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.vitrine {
+    margin: 0 -15px;
+}
+
+.vitrine-conteudo {
+    background-color: #FFF;
+    min-height: 270px;
+    border: 5px solid;
+    color: #000;
+}
+
+.vitrine-conteudo p {
+    text-align: center;
+}
+
+.dinheiro {
+    padding: 0 10px;
+    padding-bottom: 9px;
+}
+
+.maquina-output form, input {
+    width: 100%; 
+    margin: 7px 0;
+}
+
+body {
+    background-color: #CCC;
+}
+
+@media (max-width: 767px) {
+    .maquina-fundo {
+        height: 100%;
+    }
+}
+
+#total_dinheiro{
+    font-size: 28px;
+}
+
+#total_palavra{
+    font-size: 28px;
+}
